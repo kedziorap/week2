@@ -146,6 +146,27 @@ body {
         cursor: pointer;
     }
 }
+
+//GALLERY
+.gallery {
+    background: #ffe92f;
+    h2 {
+        font-size: 4em;
+    }
+    .p-block {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    img {
+        box-shadow: 0 0 10px black;
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+}
+
 @media (max-width: 767.98px) {
     .main-header {
         background-position: 38% 0; 
