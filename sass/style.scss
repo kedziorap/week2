@@ -107,11 +107,15 @@ body {
         font-size: 4em;
     }
     .photo-part {
-        
-        background-image: url(../img/2_07.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        h2 {
+            z-index: 1;
+            position: absolute;
+        }
+        img {
+            z-index: 0;
+        }
     }
 }
 .block {
@@ -148,6 +152,11 @@ body {
     }  
     .about {
         background-color: #00bdbd;
+        h2 {
+            font-size: 3em;
+        }
+    }
+    .services {
         h2 {
             font-size: 3em;
         }
