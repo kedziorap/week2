@@ -140,22 +140,6 @@ body {
   .subscribe h2 {
     font-size: 4em; }
 
-@media (max-width: 767.98px) {
-  .main-header {
-    background-position: 38% 0; }
-
-  .about {
-    background-color: #00bdbd; }
-    .about h2 {
-      font-size: 3em; }
-
-  .services h2 {
-    font-size: 3em; }
-
-  .subscribe {
-    min-height: 400px; }
-    .subscribe h2 {
-      font-size: 3em; } }
 .my-form input {
   width: 100%;
   padding: 5px;
@@ -184,10 +168,13 @@ body {
   position: relative;
   box-shadow: 0 0 15px black;
   cursor: pointer;
-  transition: 0.3s;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  overflow: hidden; }
+  .post img {
+    transition: 0.3s; }
   .post:hover img {
-    opacity: 0.9; }
+    opacity: 0.9;
+    transform: scale(1.1); }
   .post .header {
     position: absolute;
     bottom: 0;
@@ -219,6 +206,65 @@ body {
       font-weight: 700;
       line-height: 1; }
 
+.btn-red {
+  background: #f72b3b;
+  color: white;
+  padding: 10px 25px;
+  transition: 0.2s; }
+  .btn-red:hover {
+    background: red;
+    box-shadow: 0 0 10px black; }
+
+.contact {
+  padding: 50px 0;
+  background-image: url(../img/2_12.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .contact h2 {
+    font-size: 4em; }
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  margin: 5px 5px;
+  background: rgba(0, 196, 196, 0.6);
+  border: 0;
+  color: white;
+  padding: 8px;
+  transition: 0.2s; }
+  .contact-form input:focus, .contact-form textarea:focus {
+    background: #00c4c4;
+    border-left: 5px solid black; }
+  .contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: white; }
+
+footer {
+  font-size: 0.9em;
+  text-align: center;
+  color: white;
+  background: #262626; }
+  footer p {
+    padding: 20px 0;
+    margin: 0; }
+  footer .color {
+    color: #f52b55; }
+
+@media (max-width: 767.98px) {
+  .main-header {
+    background-position: 38% 0; }
+
+  .about {
+    background-color: #00bdbd; }
+    .about h2 {
+      font-size: 3em; }
+
+  .services h2 {
+    font-size: 3em; }
+
+  .subscribe {
+    min-height: 400px; }
+    .subscribe h2 {
+      font-size: 3em; } }
 @media (max-width: 575.98px) {
   .main-header .slogan {
     width: 100%; }
