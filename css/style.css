@@ -55,7 +55,8 @@ body {
     top: 0; }
 
 .navbar-light-transparent {
-  background: rgba(255, 255, 255, 0.8) !important; }
+  background: rgba(255, 255, 255, 0.9) !important;
+  margin-top: 0 !important; }
 
 .main-header {
   background-image: url(../img/head.jpg);
@@ -250,6 +251,30 @@ footer {
     color: #f52b55; }
 
 @media (max-width: 767.98px) {
+  .navbar-nav .nav-item .nav-link {
+    text-align: center;
+    color: black; }
+    .navbar-nav .nav-item .nav-link:hover {
+      color: #717070; }
+      .navbar-nav .nav-item .nav-link:hover::before {
+        width: 0; }
+
+  .navbar-nav .active-item .nav-link {
+    color: #717070; }
+    .navbar-nav .active-item .nav-link::before {
+      width: 0 !important; }
+
+  .navbar-nav .active-item .nav-link {
+    color: #717070; }
+    .navbar-nav .active-item .nav-link::before {
+      content: "";
+      width: 100%;
+      height: 3px;
+      background: #ff6033;
+      position: absolute;
+      left: 0;
+      top: 0; }
+
   .main-header {
     background-position: 38% 0; }
 
@@ -260,11 +285,16 @@ footer {
 
   .services h2 {
     font-size: 3em; }
+  .services h5 {
+    font-size: 1.2em; }
 
   .subscribe {
     min-height: 400px; }
     .subscribe h2 {
-      font-size: 3em; } }
+      font-size: 3em; }
+
+  .gallery h2 {
+    font-size: 3em; } }
 @media (max-width: 575.98px) {
   .main-header .slogan {
     width: 100%; }
